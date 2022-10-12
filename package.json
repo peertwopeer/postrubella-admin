@@ -1,0 +1,64 @@
+{
+  "name": "postrubella-admin",
+  "private": true,
+  "scripts": {
+    "start:local": "ROOT_URL='http://localhost:3000' MONGO_URL=mongodb://192.168.73.137:27017/postrubella meteor run --settings=.deploy/settings-local.json --port 127.0.0.1:3000",
+    "meteor:deploy-dev": "METEOR_SESSION_FILE=deployment_token.json DEPLOY_HOSTNAME=eu-west-1.galaxy.meteor.com meteor deploy dev-admin.postrubella.io --settings .deploy/settings-dev.json",
+    "meteor:deploy-live": "METEOR_SESSION_FILE=deployment_token.json DEPLOY_HOSTNAME=eu-west-1.galaxy.meteor.com meteor deploy admin.postrubella.io --settings .deploy/settings-live.json",
+    "meteor:login": "METEOR_SESSION_FILE=deployment_token.json meteor login",
+    "meteor:logout": "meteor logout",
+    "meteor:user": "METEOR_SESSION_FILE=deployment_token.json meteor whoami",
+    "meteor:version": "meteor --version",
+    "meteor:update": "meteor update",
+    "lint": "eslint --ext .js --ext .jsx .",
+    "lintfix": "eslint --ext .js --ext .jsx . --fix",
+    "linthelp": "eslint --ext .js --ext .jsx . --help"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "@date-io/moment": "1.3.13",
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@material-ui/pickers": "^3.2.10",
+    "aws-sdk": "^2.866.0",
+    "chartist": "^0.11.4",
+    "chartist-plugin-tooltips-updated": "^0.1.4",
+    "classnames": "^2.2.6",
+    "helmet": "^4.6.0",
+    "history": "^5.0.0",
+    "html-entities": "^2.3.2",
+    "lodash": "^4.17.21",
+    "meteor-node-stubs": "^1.0.1",
+    "moment": "^2.29.1",
+    "moment-timezone": "^0.5.33",
+    "perfect-scrollbar": "^1.5.0",
+    "permissions-policy": "^0.6.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-chartist": "^0.14.4",
+    "react-dom": "^17.0.1",
+    "react-google-maps": "^9.4.5",
+    "react-hook-form": "^6.15.4",
+    "react-mounter": "^1.2.0",
+    "react-select": "^4.2.1",
+    "slack-webhook": "^1.0.0",
+    "sweetalert": "^2.1.2"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-meteor": "^7.3.0",
+    "eslint-plugin-react": "^7.25.1"
+  }
+}

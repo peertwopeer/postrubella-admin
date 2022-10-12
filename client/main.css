@@ -1,0 +1,105 @@
+/* Global css styles  */
+
+.custom-async-select__control {
+  border-radius: 0px;
+  border-style: none;
+  border-bottom: 1px solid black;
+  margin-top: 10px;
+}
+.MuiSelect-select.MuiSelect-select {
+  margin-top: 14px !important;
+}
+.chartist-tooltip {
+  opacity: 0;
+  position: absolute;
+  margin: 15px 0 0 0;
+  background: #2596be;
+  color: #deefe6;
+  padding: 5px 10px;
+  border-radius: 3px;
+  fill-opacity: 1 !important;
+  transition: all 0.5s linear;
+}
+
+.chartist-tooltip.tooltip-show {
+  opacity: 10;
+}
+.introImg {
+  width: 100px;
+  height: 100px;
+}
+.parcel-progress-container {
+  display: flex;
+  position: relative;
+}
+
+.parcel-progress-svg {
+  transform: scaleX(-1);
+}
+.parcel-progress-path {
+  fill: none;
+  stroke-width: 10px;
+  stroke: #43a047;
+}
+.parcel-progress-circle {
+  r: 30;
+  stroke-width: 20px;
+  fill: #66bb6a;
+}
+
+.parcel-progress-tabel {
+  table-layout: fixed;
+  width: 100%;
+}
+.parcel-progress-label {
+  color: white;
+}
+.parcel-progress-tabel-data {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+  text-align: initial;
+  max-width: 0px;
+  text-transform: capitalize;
+}
+.invalid-alert {
+  color: red !important;
+  position: relative;
+  top: -0.87em;
+}
+.last-modified {
+  all: initial !important;
+  white-space: nowrap !important;
+  color: #aaa !important;
+}
+
+/* Email logs */
+.block {
+  font-size: 14px;
+  padding: 50px;
+}
+.block-title.medium {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.block-meta .inside {
+  padding: 7px 11px;
+  position: relative;
+}
+.block-meta {
+  background: #edeeef;
+  color: #97999e;
+  font-size: 11px;
+  line-height: 16px;
+}
+.block-row {
+  text-transform: capitalize;
+}
+.block-status {
+  background: #f6c01b;
+  width: 100%;
+  height: 2px;
+}
+/*  */
